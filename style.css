@@ -1,0 +1,153 @@
+body {
+  background-color: #cdd1fa;
+}
+#formForTasks{
+  margin-left: auto;
+  margin-right: auto;
+  width: 535px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.buttons{
+  margin-left: auto;
+  margin-right: auto;
+  width: 535px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.mark {
+  font-size: 25;
+  background: antiquewhite;
+  padding: 5px; 
+  border: 2px outset #d2bae3;
+  border-bottom: none;
+  height: 30px;
+  width: 15%;
+}
+.mark:active {
+  background-color: #cdd1fa;
+  padding-top: 4px;
+}
+.mark:hover{
+  background-color: #cdd1fa;
+  top: 1px;
+}
+hr{
+  margin-top: 1px;
+}
+
+.field {
+  width: 470px;
+  height: 27px;
+  border: 2px outset #d2bae3;
+  background-color: antiquewhite;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 2px 2px 5px -1px rgb(73, 38, 70);
+}
+.buttonOk{
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #c1c6fa;
+  border: none;
+  width: 35px;
+  height: 30px;
+  font-size: 20px;
+  border: 2px outset #d2bae3;
+}
+.buttonOk:hover { 
+  background: #d2bae3; 
+} 
+.buttonOk:active { 
+  background:  #85768f; 
+} 
+
+.finished{
+  text-decoration: line-through;
+  color: grey;
+}
+#allTasksFromForm{
+  min-height: 445px;
+}
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-top: 15px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+width: 500px;
+margin-left:auto;
+margin-right:auto;
+border: 2px outset #d2bae3;
+background-color: antiquewhite;
+min-height: 26px;
+box-shadow: 2px 2px 5px -1px rgb(73, 38, 70);
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #d2bae3;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #65477a;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#forNumbers{
+  margin-left: auto;
+  margin-right: auto;
+  width: 535px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  
+}
+.numderOfList{
+  padding-left: 2px;
+  padding-right: 2px;
+}
